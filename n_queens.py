@@ -1,6 +1,6 @@
 import sys
 
-n = 8
+n = 11
 board = [[0 for i in range(0,n)] for i in range(0,n)]
 
 def print_(b):
@@ -12,7 +12,7 @@ def print_(b):
 
 def is_safe(b, r, c):
 	
-	for i in range(0,c):
+	for i in range(1,c+1):
 		if(c-i<0 or c-i>=n): 
 			print("bad index" + str(c-i))
 			sys.exit()
@@ -24,11 +24,11 @@ def is_safe(b, r, c):
 		
 	return True
 
-def solve(b, c, count=0):
+def solve(b, c, count=[0]):
 	
 	if(c==n):
-		count += 1
-		print(count)
+		count[0] += 1
+		print(count[0])
 		print_(b)
 	else:
 		for i in range(n):

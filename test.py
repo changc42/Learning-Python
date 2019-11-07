@@ -1,11 +1,10 @@
-n=9
-def islarge(x):
-	if(True):
-		if(True):
-			print("level 1")
-			return False
-	elif(True):
-		print("level 2")
-		return False
+count = [0]
 
-print(islarge(n))
+count[0]=9
+def counter(n):
+	n[0]=5
+		
+	
+
+counter(count)
+print(count[0])
